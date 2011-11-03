@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /info/ctex-faq
+# catalog-date 2009-11-09 15:03:08 +0100
+# catalog-license fdl
+# catalog-version undef
 Name:		texlive-ctex-faq
 Version:	20091109
 Release:	1
@@ -24,6 +30,7 @@ were answered in detail by the author.
 %doc %{_texmfdistdir}/doc/latex/ctex-faq/src/ctex-faq.sty
 %doc %{_texmfdistdir}/doc/latex/ctex-faq/src/ctex-faq.tex
 %doc %{_texmfdistdir}/doc/latex/ctex-faq/src/make.bat
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -34,3 +41,5 @@ were answered in detail by the author.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
