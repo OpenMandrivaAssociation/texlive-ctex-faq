@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ctex-faq.doc.tar.
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 Most questions were collected on the bbs.ctex.org forum, and
@@ -30,7 +28,6 @@ were answered in detail by the author.
 %doc %{_texmfdistdir}/doc/latex/ctex-faq/src/ctex-faq.sty
 %doc %{_texmfdistdir}/doc/latex/ctex-faq/src/ctex-faq.tex
 %doc %{_texmfdistdir}/doc/latex/ctex-faq/src/make.bat
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -41,5 +38,3 @@ were answered in detail by the author.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
