@@ -38,3 +38,17 @@ were answered in detail by the author.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20091109-2
++ Revision: 750666
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20091109-1
++ Revision: 718181
+- texlive-ctex-faq
+- texlive-ctex-faq
+- texlive-ctex-faq
+- texlive-ctex-faq
+
