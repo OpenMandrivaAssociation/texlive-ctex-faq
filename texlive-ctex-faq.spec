@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-ctex-faq
 Version:	20091109
-Release:	3
+Release:	4
 Summary:	LaTeX FAQ by the Chinese TeX Society (ctex.org)
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/ctex-faq
