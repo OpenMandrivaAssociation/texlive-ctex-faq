@@ -5,8 +5,8 @@
 # catalog-license fdl
 # catalog-version undef
 Name:		texlive-ctex-faq
-Version:	20180303
-Release:	2
+Version:	20190228
+Release:	1
 Summary:	LaTeX FAQ by the Chinese TeX Society (ctex.org)
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/ctex-faq
