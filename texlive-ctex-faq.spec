@@ -1,18 +1,12 @@
-# revision 15878
-# category Package
-# catalog-ctan /info/ctex-faq
-# catalog-date 2009-11-09 15:03:08 +0100
-# catalog-license fdl
-# catalog-version undef
 Name:		texlive-ctex-faq
-Version:	20190228
+Version:	15878
 Release:	1
 Summary:	LaTeX FAQ by the Chinese TeX Society (ctex.org)
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/ctex-faq
 License:	FDL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ctex-faq.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ctex-faq.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ctex-faq.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ctex-faq.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -31,24 +25,10 @@ were answered in detail by the author.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20091109-2
-+ Revision: 750666
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20091109-1
-+ Revision: 718181
-- texlive-ctex-faq
-- texlive-ctex-faq
-- texlive-ctex-faq
-- texlive-ctex-faq
-
