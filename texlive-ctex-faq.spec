@@ -1,6 +1,6 @@
 Name:		texlive-ctex-faq
 Version:	15878
-Release:	1
+Release:	2
 Summary:	LaTeX FAQ by the Chinese TeX Society (ctex.org)
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/ctex-faq
