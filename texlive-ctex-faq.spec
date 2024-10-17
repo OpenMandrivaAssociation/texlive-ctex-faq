@@ -3,7 +3,7 @@ Version:	15878
 Release:	2
 Summary:	LaTeX FAQ by the Chinese TeX Society (ctex.org)
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/info/ctex-faq
+URL:		https://www.ctan.org/tex-archive/info/ctex-faq
 License:	FDL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ctex-faq.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ctex-faq.doc.r%{version}.tar.xz
